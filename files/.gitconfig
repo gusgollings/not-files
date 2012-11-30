@@ -1,13 +1,13 @@
 [push]
 	default = upstream
 [user]
-	name = Ben Hoskings
-	email = ben@hoskings.net
+	name = Gus Gollings
+        email = gus.gollings@gmail.com
 [color]
 	diff = auto
 	status = auto
 	branch = auto
 [core]
-	excludesfile = /Users/ben/.gitignore
+	excludesfile = /Users/gusgollings/.gitignore
 [github]
-	user = benhoskings
+	user = gusgollings
