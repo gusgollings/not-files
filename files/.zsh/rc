@@ -51,3 +51,5 @@ zle -N self-insert-backslash
 [[ -d "$HOME/.rbenv" ]] && export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 
 launchctl setenv PATH $PATH
+
+. /opt/boxen/env.sh
