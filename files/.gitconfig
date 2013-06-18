@@ -1,5 +1,5 @@
 [push]
-	default = upstream
+	default = simple
 [user]
 	name = Gus Gollings
         email = gus.gollings@gmail.com
@@ -7,7 +7,14 @@
 	diff = auto
 	status = auto
 	branch = auto
+ ui = auto
 [core]
-	excludesfile = /Users/gusgollings/.gitignore
+	excludesfile = /opt/boxen/config/git/gitignore
 [github]
 	user = gusgollings
+
+[hub]
+protocol = https
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
