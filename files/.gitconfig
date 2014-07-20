@@ -2,7 +2,7 @@
 	default = simple
 [user]
 	name = Gus Gollings
-        email = gus.gollings@gmail.com
+	email = gus.gollings@gmail.com
 [color]
 	diff = auto
 	status = auto

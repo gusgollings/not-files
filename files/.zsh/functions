@@ -1,3 +1,9 @@
 cd() {
   builtin cd "$@" && ls
 }
+
+function egpg_view {
+  if [ -d ~/src/toolbox/gpg ]; then
+     ~/src/toolbox/gpg/scripts/view_asset ~/src/toolbox/gpg/assets/shared-secrets/$1*
+  fi
+}
