@@ -7,14 +7,11 @@
 	diff = auto
 	status = auto
 	branch = auto
- ui = auto
-# [core]
-# 	excludesfile = /opt/boxen/config/git/gitignore
+[core]
+  ui = auto
 [github]
 	user = gusgollings
-
 [hub]
-protocol = https
-
-[credential]
-helper = /opt/boxen/bin/boxen-git-credential
+  protocol = https
+#[credential]
+#helper = /opt/boxen/bin/boxen-git-credential

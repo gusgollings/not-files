@@ -60,3 +60,13 @@ alias less='less -R'
 . ~/.aliases/git
 . ~/.aliases/svn
 . ~/.aliases/commands
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/opt/ruby@2.2/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+
+# From nodenv
+eval "$(nodenv init -)"
+
+launchctl setenv PATH $PATH
