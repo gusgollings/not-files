@@ -1,2 +1,1 @@
 export HOME=/Users/gusgollings
-export PATH="/opt/boxen/rbenv/shims:/opt/boxen/rbenv/bin:/opt/boxen/rbenv/plugins/ruby-build/bin:$PATH"

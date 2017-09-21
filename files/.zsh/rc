@@ -45,11 +45,10 @@ bindkey '^' self-insert-backslash
 function self-insert-backslash() { LBUFFER+='\'; zle .self-insert }
 zle -N self-insert-backslash
 
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
 
-[[ -d "/usr/local/share/python" ]] && export PATH="/usr/local/share/python:$PATH"
-
-[[ -d "$HOME/.rbenv" ]] && export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
+# From nodenv
+eval "$(nodenv init -)"
 
 launchctl setenv PATH $PATH
-
-. /opt/boxen/env.sh
