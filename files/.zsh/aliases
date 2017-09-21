@@ -14,8 +14,8 @@ alias lal='ls -lah'
 alias s='git status -sb $argv; return 0'
 alias d='gd $argv'
 
-alias sub='subl -n'
-alias m='sub $argv .'
+alias sub='atom -n'
+alias a='sub $argv .'
 
 alias b='bundle exec'
 alias r='bundle exec rake'
