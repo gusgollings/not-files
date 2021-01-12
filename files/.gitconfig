@@ -7,6 +7,7 @@
 	diff = auto
 	status = auto
 	branch = auto
+	ui = always
 [core]
   ui = auto
 [github]
@@ -15,3 +16,12 @@
   protocol = https
 #[credential]
 #helper = /opt/boxen/bin/boxen-git-credential
+[buildkite]
+	apikey = 189a25f8cd71bdc53127b43fbd85923b89d46ad8
+	account = envato
+	organization = envato
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process

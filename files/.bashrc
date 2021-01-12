@@ -15,7 +15,7 @@ if [ $system_name == 'Linux' ]; then
 else
   [ -f /opt/local/etc/bash_completion ] && . /opt/local/etc/bash_completion
 
-  export EDITOR='subl -w'
+  export EDITOR='code -w'
 fi
 
 export ARCHFLAGS='-arch i386'
@@ -63,10 +63,15 @@ alias less='less -R'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="/usr/local/opt/ruby@2.2/bin:$PATH"
-export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
-
-# From nodenv
-eval "$(nodenv init -)"
 
 launchctl setenv PATH $PATH
+
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+. /usr/local/opt/asdf/asdf.sh
+
+. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
